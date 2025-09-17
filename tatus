@@ -1,0 +1,36 @@
+[33mcommit f58285135f2f4449e14c78e8d35779443df51956[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: bc3ab4a 1ff88fc
+Author: Adithyan SV <adithyansv1304@gmail.com>
+Date:   Mon Aug 25 12:44:48 2025 +0530
+
+    Merge branch 'main' of github.com:AdithyanSV/missing_job
+
+[33mcommit bc3ab4abd0368c89067c81440a63d79968f76e32[m
+Author: Adithyan SV <adithyansv1304@gmail.com>
+Date:   Mon Aug 25 12:44:16 2025 +0530
+
+    Added Player Controller and Collected 3D Assets, Tested some out
+
+[33mcommit 1ff88fc1676766e457235b811f16eaf5f29940bd[m
+Author: AdithyanSV <62543927+AdithyanSV@users.noreply.github.com>
+Date:   Mon Aug 11 15:24:31 2025 +0530
+
+    Update README.md
+
+[33mcommit ca5282d50d35f1f230a726a513084b3188265f23[m
+Author: Adithyan SV <adithyansv1304@gmail.com>
+Date:   Mon Aug 11 15:22:17 2025 +0530
+
+    Created unity file along with gitignore
+
+[33mcommit cac42dca504bc6ad6f41195bce3379ccac2b028b[m
+Author: Adithyan SV <adithyansv1304@gmail.com>
+Date:   Mon Aug 11 15:21:14 2025 +0530
+
+    first commit: Created project file and added gitignore
+
+[33mcommit 1947ccbf59e81d7f15600ad33adb66c7797a3630[m
+Author: Adithyan SV <adithyansv1304@gmail.com>
+Date:   Mon Aug 11 15:19:50 2025 +0530
+
+    first commit: Created project file and added gitignore
