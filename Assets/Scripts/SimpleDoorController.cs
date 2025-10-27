@@ -13,8 +13,8 @@ public class SimpleDoorController : MonoBehaviour
     {
         if (!doorOpened)
         {
-            leftDoorAnimator.SetBool("OpenDoor", true);
-            rightDoorAnimator.SetBool("OpenDoor", true);
+            leftDoorAnimator.SetBool("DoorOpened", true);
+            rightDoorAnimator.SetBool("DoorOpened", true);
             AudioManager.Instance.PlaySFX(AudioManager.Instance.doorOpen);
             doorOpened = true;
             Debug.Log("Puzzle complete — door opened.");

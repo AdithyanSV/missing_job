@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro; // if using TextMeshPro
 
 public class LaptopTerminal2 : MonoBehaviour
@@ -12,15 +12,18 @@ public class LaptopTerminal2 : MonoBehaviour
     public void CheckAnswer()
     {
         string input = answerField.text.Trim().ToUpper();
+        Debug.Log($"Entered Answer: {input}");
 
-        if (input == "printPyramid(rows)")
+        if (input == "ROWS") //Updated expected answer
         {
             successMessage.SetActive(true);
             AudioManager.Instance.PlaySFX(AudioManager.Instance.puzzleSolved);
-            Invoke(nameof(CloseTerminal), 2f); // wait 2 seconds
+            Debug.Log("✅ Correct answer — closing terminal soon");
+            Invoke(nameof(CloseTerminal), 2f);
         }
         else
         {
+            Debug.Log("❌ Wrong answer");
             answerField.text = "";
         }
     }
