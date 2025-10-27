@@ -36,6 +36,9 @@ public class LaptopInteract : MonoBehaviour
         playerController.SetControl(false);
         playerController.SetCursorVisibility(true);
         isOpen = true;
+
+        AudioManager.Instance.PlaySFX(AudioManager.Instance.laptopOpen);
+
     }
 
     public void CloseLaptop()
@@ -44,5 +47,7 @@ public class LaptopInteract : MonoBehaviour
         playerController.SetControl(true);
         playerController.SetCursorVisibility(false);
         isOpen = false;
+
+        
     }
 }

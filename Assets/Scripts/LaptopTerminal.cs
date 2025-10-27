@@ -7,6 +7,7 @@ public class LaptopTerminal : MonoBehaviour
     public LaptopInteract laptopInteract;
     public TMP_InputField answerField;
     public GameObject successMessage;
+    [SerializeField] private PuzzleRoomDoorController doorController;
 
     public void CheckAnswer()
     {
@@ -15,6 +16,7 @@ public class LaptopTerminal : MonoBehaviour
         if (input == "11")
         {
             successMessage.SetActive(true);
+            AudioManager.Instance.PlaySFX(AudioManager.Instance.puzzleSolved);
             Invoke(nameof(CloseTerminal), 2f); // wait 2 seconds
         }
         else
@@ -26,5 +28,6 @@ public class LaptopTerminal : MonoBehaviour
     void CloseTerminal()
     {
         laptopInteract.CloseLaptop();
+        doorController.UnlockDoors();
     }
 }
